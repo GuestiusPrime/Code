@@ -1,0 +1,1 @@
+start "" "C:\Program Files\WindowsApps\SpotifyAB.SpotifyMusic_1.260.564.0_x64__zpdnekdrzrea0\Spotify.exe"
