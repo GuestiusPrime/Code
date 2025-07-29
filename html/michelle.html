@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dancing Cat Music Page</title>
+    <style>
+    body {
+        background: #d3a6cb;
+        color: #b93232;
+        font-family: 'Arial Nova', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #loading-screen {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: #fffceb;
+        color: #b93232;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2rem;
+        z-index: 1000;
+        font-family: inherit;
+    }
+    #loading-bar-container {
+        width: 320px;
+        height: 38px;
+        background: #ececec;
+        border-radius: 20px;
+        box-shadow: 0 2px 12px rgba(0,0,0,.1);
+        margin-top: 25px;
+        overflow: hidden;
+        border: 1.5px solid #b93232;
+        font-family: inherit;
+    }
+    #loading-bar {
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, #b93232 55%, #d3a6cb 100%);
+        border-radius: 20px 0 0 20px;
+        transition: width 0.2s;
+        font-family: inherit;
+    }
+    #loading-percent {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        font-family: inherit;
+    }
+    #start-btn {
+        font-size: 2rem;
+        padding: 20px 40px;
+        background: #b93232;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,.18);
+        transition: background 0.2s;
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+    }
+    #start-btn:hover {
+        background: #920d0d;
+    }
+    .arrows {
+        margin-right: 10px;
+        font-size: 2rem;
+        vertical-align: middle;
+        font-family: inherit;
+    }
+    #main-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        font-family: inherit;
+    }
+    img {
+        width: 300px;
+        margin-top: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 18px rgba(0,0,0,.25);
+    }
+    </style>
+
+</head>
+<body>
+  <button id="start-btn">
+    <span class="arrows">➜ ➜ ➜</span> CLICK HERE ✔ ✔ ✔
+  </button>
+
+  <div id="loading-screen">
+    Loading... (ur cute)
+    <div id="loading-bar-container">
+      <div id="loading-bar"></div>
+    </div>
+    <div id="loading-percent">0%</div>
+  </div>
+
+  <div id="main-content">
+    <h1>CAR</h1>
+    <h2>i made this music for mandy's bellec class</h2>
+    <h3>it was supposed to be women's rights to avoid slavery lmao</h3>
+    <img src="https://i.pinimg.com/originals/12/f6/ac/12f6accc21f3cad0047fc68fc282569c.gif" alt="Dancing Cat">
+    <audio id="music" src="Mandy music - Copy.mp3" loop></audio>
+  </div>
+
+  <script>
+    document.getElementById('start-btn').onclick = function() {
+      this.style.display = 'none';
+      document.getElementById('loading-screen').style.display = 'flex';
+
+      let bar = document.getElementById('loading-bar');
+      let percent = document.getElementById('loading-percent');
+      let progress = 0;
+
+      // Loading bar animation
+      let interval = setInterval(function() {
+        progress += Math.random() * 8 + 2; // 2-10% random increments
+        if (progress > 100) progress = 100;
+        bar.style.width = progress + '%';
+        percent.textContent = Math.round(progress) + '%';
+
+        if (progress >= 100) {
+          clearInterval(interval);
+          setTimeout(function() {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'flex';
+            document.getElementById('music').play();
+          }, 400); // Short delay before showing main content
+        }
+      }, 70); // Adjust speed here
+    };
+  </script>
+</body>
+</html>
