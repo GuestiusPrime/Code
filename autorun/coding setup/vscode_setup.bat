@@ -1,1 +1,0 @@
-start "" "C:\Users\olima\AppData\Local\Programs\Microsoft VS Code\Code.exe"

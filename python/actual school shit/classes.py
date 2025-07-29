@@ -76,22 +76,22 @@ while True:
         book = str(book.lower().strip())
         if book == 'moby dick' or book == 'mb' or book == 'moby':
             library.borrow_book('Moby Dick')
-        if book == 'i fell in love with hope' or book == 'ifilwh' or book == 'hope':
+        elif book == 'i fell in love with hope' or book == 'ifilwh' or book == 'hope':
             library.borrow_book('I Fell In Love With Hope')
-        if book == 'the great gatsby' or book == 'tgg' or book == 'great gatsby':
+        elif book == 'the great gatsby' or book == 'tgg' or book == 'great gatsby':
             library.borrow_book('The Great Gatsby')
     
-    if move == 'return' or move == 'return book' or move == 'return a book':
+    elif move == 'return' or move == 'return book' or move == 'return a book':
         book = input('Which book do you wanna return? ')
         print('')
         book = str(book.lower().strip())
         if book == 'moby dick' or book == 'mb' or book == 'moby':
             library.return_book('Moby Dick')
-        if book == 'i fell in love with hope' or book == 'ifilwh' or book == 'hope':
+        elif book == 'i fell in love with hope' or book == 'ifilwh' or book == 'hope':
             library.return_book('I Fell In Love With Hope')
-        if book == 'the great gatsby' or book == 'tgg' or book == 'great gatsby':
+        elif book == 'the great gatsby' or book == 'tgg' or book == 'great gatsby':
             library.return_book('The Great Gatsby')
 
-    if move == 'end' or move == 'exit' or move == 'quit':
+    elif move == 'end' or move == 'exit' or move == 'quit':
         exit()
 

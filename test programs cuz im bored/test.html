@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Mom ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial+Nova:wght@400&display=swap');
+        
+        body {
+            font-family: 'Arial Nova', sans-serif;
+            text-align: center;
+            background-color: #ffccd5;
+            color: #6a1b9a;
+            padding: 20px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .slide {
+            display: none;
+            width: 60%;
+            border-radius: 15px;
+        }
+        .fade {
+            animation: fadeIn ease-in-out 1.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .caption {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        .final-screen {
+            display: none;
+            font-size: 32px;
+            margin-top: 40px;
+            animation: fadeScaleIn ease-in-out 2s;
+        }
+        @keyframes fadeScaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .hearts {
+            font-size: 40px;
+            color: red;
+        }
+        .next-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: 'Arial Nova', sans-serif;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .next-btn:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <img class="slide fade" src="folded laundry stock.jpg">
+        <img class="slide fade" src="neat bed stock.jpg">
+        <img class="slide fade" src="homemade food stock.jpg">
+        <div class="caption">Thank you mom ❤️</div>
+        <div class="final-screen">
+            <div class="hearts">❤️❤️❤️❤️❤️</div>
+            <p>Happy Mother's Day</p>
+            <p>From: Oliver (your really cool son)</p>
+        </div>
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">Next</button>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+        const caption = document.querySelector(".caption");
+        const finalScreen = document.querySelector(".final-screen");
+
+        function nextSlide() {
+            if (slideIndex < slides.length) {
+                slides[slideIndex].style.display = "none";
+                slideIndex++;
+                if (slideIndex < slides.length) {
+                    slides[slideIndex].style.display = "block";
+                } else {
+                    caption.style.display = "none";
+                    finalScreen.style.display = "block";
+                    document.querySelector(".next-btn").style.display = "none";
+                }
+            }
+        }
+
+        window.onload = () => {
+            slides[slideIndex].style.display = "block";
+        };
+    </script>
+</body>
+</html>

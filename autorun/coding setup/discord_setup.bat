@@ -1,1 +1,0 @@
-start "" "C:\Users\olima\AppData\Local\Discord\app-1.0.9045\Discord.exe"

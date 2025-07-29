@@ -1,1 +1,0 @@
-start "" "https://copilot.microsoft.com/chats/m1GQzJL44SYp6mH2dAqgY"

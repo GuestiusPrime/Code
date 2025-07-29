@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-07-24T14:46:08.546373",
+  "ip_address": "127.0.0.1",
+  "browser_fingerprint": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0",
+    "screen_resolution": "1920x1080",
+    "color_depth": 24,
+    "timezone": "America/Toronto",
+    "language": "en-US",
+    "languages": [
+      "en-US",
+      "en",
+      "fr",
+      "it",
+      "ca",
+      "zh-CN"
+    ],
+    "platform": "Win32",
+    "cookie_enabled": true,
+    "online": true,
+    "referrer": "",
+    "url": "http://127.0.0.1:8080/"
+  }
+}
+--------------------------------------------------
+{
+  "timestamp": "2025-07-24T14:53:34.485759",
+  "ip_address": "127.0.0.1",
+  "browser_fingerprint": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0",
+    "screen_resolution": "1920x1080",
+    "color_depth": 24,
+    "timezone": "America/Toronto",
+    "language": "en-US",
+    "languages": [
+      "en-US",
+      "en",
+      "fr",
+      "it",
+      "ca",
+      "zh-CN"
+    ],
+    "platform": "Win32",
+    "cookie_enabled": true,
+    "online": true,
+    "referrer": "",
+    "url": "http://127.0.0.1:8080/"
+  }
+}
+--------------------------------------------------
+{
+  "timestamp": "2025-07-24T14:54:44.021999",
+  "ip_address": "127.0.0.1",
+  "browser_fingerprint": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0",
+    "screen_resolution": "1920x1080",
+    "color_depth": 24,
+    "timezone": "America/Toronto",
+    "language": "en-US",
+    "languages": [
+      "en-US",
+      "en",
+      "fr",
+      "it",
+      "ca",
+      "zh-CN"
+    ],
+    "platform": "Win32",
+    "cookie_enabled": true,
+    "online": true,
+    "referrer": "",
+    "url": "http://127.0.0.1:8080/"
+  }
+}
+--------------------------------------------------
+{
+  "timestamp": "2025-07-24T14:57:13.088053",
+  "ip_address": "127.0.0.1",
+  "browser_fingerprint": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0",
+    "screen_resolution": "1920x1080",
+    "color_depth": 24,
+    "timezone": "America/Toronto",
+    "language": "en-US",
+    "languages": [
+      "en-US",
+      "en",
+      "fr",
+      "it",
+      "ca",
+      "zh-CN"
+    ],
+    "platform": "Win32",
+    "cookie_enabled": true,
+    "online": true,
+    "referrer": "",
+    "url": "http://127.0.0.1:8080/"
+  }
+}
+--------------------------------------------------
+{
+  "timestamp": "2025-07-24T14:57:43.799016",
+  "ip_address": "127.0.0.1",
+  "browser_fingerprint": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0",
+    "screen_resolution": "1920x1080",
+    "color_depth": 24,
+    "timezone": "America/Toronto",
+    "language": "en-US",
+    "languages": [
+      "en-US",
+      "en",
+      "fr",
+      "it",
+      "ca",
+      "zh-CN"
+    ],
+    "platform": "Win32",
+    "cookie_enabled": true,
+    "online": true,
+    "referrer": "",
+    "url": "http://127.0.0.1:8080/"
+  }
+}
+--------------------------------------------------
