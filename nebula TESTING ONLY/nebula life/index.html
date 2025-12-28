@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebula Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+      
+      @keyframes gradient-animation {
+        0% { background-position: 0% 0%; }
+        25% { background-position: 100% 0%; }
+        50% { background-position: 100% 100%; }
+        75% { background-position: 0% 100%; }
+        100% { background-position: 0% 0%; }
+      }
+      
+      #background-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0d011a, #1f033a, #3b0066, #ff00ff, #0077ff, #4a00e0, #2a004f, #000000);
+        background-size: 600% 600%;
+        animation: gradient-animation 30s ease infinite;
+      }
+      
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'pulse-glow': 'pulse-glow 2.5s infinite ease-in-out',
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'scale-in': 'scale-in 0.3s ease-out forwards',
+              'logo-pulse': 'logo-pulse 2.5s ease-in-out infinite',
+              'fade-in-main': 'fade-in-main 0.8s ease-out forwards',
+              'startup-logo': 'startup-logo 2.8s ease-out forwards',
+              'startup-title': 'startup-title 2.8s ease-out forwards',
+            },
+            keyframes: {
+              'pulse-glow': {
+                '0%, 100%': { boxShadow: '0 0 15px rgba(217, 70, 239, 0.4)', transform: 'scale(1)' },
+                '50%': { boxShadow: '0 0 30px rgba(217, 70, 239, 0.8)', transform: 'scale(1.05)' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'scale-in': {
+                '0%': { transform: 'scale(0.95)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+              'logo-pulse': {
+                    '0%': {
+                        transform: 'scale(0.95)',
+                        opacity: '0.9',
+                        filter: 'drop-shadow(0 0 8px rgba(217, 70, 239, 0.6))',
+                    },
+                    '50%': {
+                        transform: 'scale(1.05)',
+                        opacity: '1',
+                        filter: 'drop-shadow(0 0 20px rgba(217, 70, 239, 1))',
+                    },
+                    '100%': {
+                        transform: 'scale(0.95)',
+                        opacity: '0.9',
+                        filter: 'drop-shadow(0 0 8px rgba(217, 70, 239, 0.6))',
+                    },
+              },
+              'fade-in-main': {
+                  'from': { opacity: '0' },
+                  'to': { opacity: '1' },
+              },
+              'startup-logo': {
+                '0%': { transform: 'scale(0.01) translateX(0)', opacity: '0' },
+                '9%': { transform: 'scale(1) translateX(0)', opacity: '1' },
+                '30%': { transform: 'scale(1) translateX(0)', opacity: '1' },
+                '50%': { transform: 'scale(1) translateX(-65px)', opacity: '1' },
+                '100%': { transform: 'scale(1) translateX(-65px)', opacity: '1' }
+              },
+              'startup-title': {
+                '0%, 25%': { opacity: '0', transform: 'translateX(0)' },
+                '60%': { opacity: '1', transform: 'translateX(90px)' },
+                '100%': { opacity: '1', transform: 'translateX(90px)' }
+              }
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased text-white bg-transparent">
+    <div id="background-animation"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

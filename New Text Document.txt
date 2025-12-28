@@ -1,0 +1,8 @@
+Free servers:
+
+Render
+Cloudflare pages
+Vercel
+Neocities
+Netlify
+Github Pages
